@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Special Handing Notes" section_id="82f4d8181bd804507e9211fc2d4bcb0f" sys_domain="global" table="x_snc_barclay_remo_remortgage_applications" version="3" view="Barclay">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>special_handling_notes</element>
+            <position>0</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 20:50:06</sys_created_on>
+            <sys_id>4bad06a8db9cc45019fe52f8f496190f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Special Handling Notes Pop Up">07103c0dc351120095ccd02422d3ae9b</sys_ui_formatter>
+            <sys_ui_section caption="Special Handing Notes" display_value="Special Handing Notes" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">82f4d8181bd804507e9211fc2d4bcb0f</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 20:50:06</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>REL.sn_customerservice_case.REL:bb260316c301120095ccd02422d3aed9</element>
+            <position>1</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 20:50:06</sys_created_on>
+            <sys_id>03ad06a8db9cc45019fe52f8f4961910</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Special Handing Notes" display_value="Special Handing Notes" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">82f4d8181bd804507e9211fc2d4bcb0f</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 20:50:06</sys_updated_on>
+            <sys_user/>
+            <type>list</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Special Handing Notes</caption>
+            <header>false</header>
+            <name>x_snc_barclay_remo_remortgage_applications</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-09-30 17:24:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>82f4d8181bd804507e9211fc2d4bcb0f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Special Handing Notes</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+            <sys_update_name>sys_ui_section_82f4d8181bd804507e9211fc2d4bcb0f</sys_update_name>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-09-30 17:24:15</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Barclay" name="Barclay">f5f498181bd804507e9211fc2d4bcbf7</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

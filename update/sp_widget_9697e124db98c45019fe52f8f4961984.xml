@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function ($scope, spUtil) {
+  $scope.$on('record.updated', function(name, data) {
+    spUtil.update($scope);
+  });
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.field-size{&#13;
+  height:90px !important;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Remortgage Ticket Fields</name>
+        <option_schema>[
+   {
+      "name": "pickup_msg",
+      "label": "Pickup message",
+      "type": "string"
+   }
+]</option_schema>
+        <public>false</public>
+        <roles>snc_external,snc_internal</roles>
+        <script><![CDATA[(function(){
+	var gr = $sp.getRecord();
+	var table = gr.getTableName();
+	data.canRead = gr.canRead();
+	if (!data.canRead) 
+		return;
+
+	var agent = "";
+	var a = $sp.getField(gr, 'assigned_to');
+	if (a != null)
+		agent = a.display_value;
+	var list = "number,assigned_to,priority,state,employer_name,employment_type,employer_address,postcode,employer_status,country,occupation,work_telephone_number,employment_start_date,income_frequency,income_type,net_income,income_amount,re_valuation_of_assets_last_2_years,re_valuation_details,non_recurring_items,amount_of_non_recurring_items,non_recurring_items_details, other_loans, other_commitments, property_related_expenses,personal_changes,total_savings,property_value,purchase_price,total_investments,total_required,existing_product,product_code,deposit_amount,source_deposit,customer_added_fee,year_length,month_length,loan_purpose,repayment_method,payment_method,repay_strategy,total_applicants,child_dependents,adult_dependents";
+	var consumer = $sp.getField(gr, 'consumer');
+	if(consumer != null)
+		list += ",consumer";
+	else
+		list += ",account,contact";
+	
+	if(table == 'sn_customerservice_case'){		
+		list += ",asset,product";						
+	}
+	else if (table == 'csm_order_case')
+		list += ",order_case";
+	
+	var fields = $sp.getFields(gr, list);
+	if (gr.getValue("sys_mod_count") > 0)
+		fields.push($sp.getField(gr, 'sys_updated_on'));
+
+
+	data.tableLabel = gr.getLabel();
+	data.fields = fields;
+	data.agent = agent;
+	data.table = table;
+	data.sys_id = gr.getUniqueValue();
+	var state = gr.getValue('state');
+	if(state == '18')
+		gs.addInfoMessage(gs.getMessage("This case requires additional information from you."));
+})();
+
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>brian.nguyen</sys_created_by>
+        <sys_created_on>2019-10-01 18:03:44</sys_created_on>
+        <sys_id>9697e124db98c45019fe52f8f4961984</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Remortgage Ticket Fields</sys_name>
+        <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+        <sys_update_name>sp_widget_9697e124db98c45019fe52f8f4961984</sys_update_name>
+        <sys_updated_by>brian.nguyen</sys_updated_by>
+        <sys_updated_on>2019-10-01 19:50:15</sys_updated_on>
+        <template><![CDATA[<div ng-if="data.canRead" class="panel panel-primary b">
+  <div class="panel-heading">
+    <h4 class="panel-title">${{{data.tableLabel}} details}</h4>
+  </div>
+
+  <div class="panel-body">
+    <div ng-if="data.fields.length > 0">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 col-xs-4 m-b field-size" ng-repeat="field in data.fields" 
+             ng-if="field.value && (field.type != 'decimal' || field.type == 'decimal' && field.value != 0)" >
+          <label class="m-n"><strong>{{field.label}}</strong></label>
+          <span ng-switch="field.type">
+            <div ng-switch-when="glide_date_time" title="{{field.display_value}}">
+              <sn-time-ago timestamp="::field.value" />
+            </div>
+            <div ng-switch-default >{{field.display_value}}</div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

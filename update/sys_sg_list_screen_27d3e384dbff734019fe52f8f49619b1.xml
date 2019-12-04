@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_list_screen">
+    <sys_sg_list_screen action="INSERT_OR_UPDATE">
+        <available_offline>false</available_offline>
+        <description/>
+        <dynamic_prefetch_count/>
+        <fetch_type>on_demand</fetch_type>
+        <hide_filters>false</hide_filters>
+        <icon display_value="icon-Thumbs-Down">2bd3e384dbff734019fe52f8f49619ab</icon>
+        <name>Incomplete Remortgages</name>
+        <roles_override/>
+        <sys_class_name>sys_sg_list_screen</sys_class_name>
+        <sys_created_by>brian.nguyen</sys_created_by>
+        <sys_created_on>2019-09-05 17:18:20</sys_created_on>
+        <sys_id>27d3e384dbff734019fe52f8f49619b1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Incomplete Remortgages</sys_name>
+        <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+        <sys_update_name>sys_sg_list_screen_27d3e384dbff734019fe52f8f49619b1</sys_update_name>
+        <sys_updated_by>brian.nguyen</sys_updated_by>
+        <sys_updated_on>2019-09-05 20:22:23</sys_updated_on>
+    </sys_sg_list_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=27d3e384dbff734019fe52f8f49619b1"/>
+</record_update>

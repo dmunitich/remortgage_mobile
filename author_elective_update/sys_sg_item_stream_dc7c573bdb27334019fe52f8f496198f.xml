@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream">
+    <sys_sg_item_stream action="DELETE">
+        <data_item display_value="Barclay Remortgage App Barclays Remortgage">507c573bdb27334019fe52f8f496198b</data_item>
+        <interleaved_field/>
+        <name>Barclays Remortgage Item Stream</name>
+        <sys_class_name>sys_sg_item_stream</sys_class_name>
+        <sys_created_by>brian.nguyen</sys_created_by>
+        <sys_created_on>2019-09-04 22:07:24</sys_created_on>
+        <sys_id>dc7c573bdb27334019fe52f8f496198f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Barclays Remortgage Item Stream</sys_name>
+        <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+        <sys_update_name>sys_sg_item_stream_dc7c573bdb27334019fe52f8f496198f</sys_update_name>
+        <sys_updated_by>brian.nguyen</sys_updated_by>
+        <sys_updated_on>2019-09-05 16:58:21</sys_updated_on>
+        <table>x_snc_remortgage_a_barclays_remortgage</table>
+    </sys_sg_item_stream>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</application>
+        <file_path/>
+        <instance_id>080cc80cdb2ffb400ae3ac44d4961906</instance_id>
+        <instance_name>csmbarclaydemo</instance_name>
+        <name>sys_sg_item_stream_dc7c573bdb27334019fe52f8f496198f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream"><sys_sg_item_stream action="INSERT_OR_UPDATE"><data_item display_value="Barclay Remortgage App Barclays Remortgage">507c573bdb27334019fe52f8f496198b</data_item><interleaved_field/><name>Barclays Remortgage Item Stream</name><sys_class_name>sys_sg_item_stream</sys_class_name><sys_created_by>brian.nguyen</sys_created_by><sys_created_on>2019-09-04 22:07:24</sys_created_on><sys_id>dc7c573bdb27334019fe52f8f496198f</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Barclays Remortgage Item Stream</sys_name><sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package><sys_policy/><sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope><sys_update_name>sys_sg_item_stream_dc7c573bdb27334019fe52f8f496198f</sys_update_name><sys_updated_by>brian.nguyen</sys_updated_by><sys_updated_on>2019-09-05 16:58:21</sys_updated_on><table>x_snc_remortgage_a_barclays_remortgage</table></sys_sg_item_stream></record_update>]]></payload>
+        <payload_hash>-141179331</payload_hash>
+        <record_name>Barclays Remortgage Item Stream</record_name>
+        <reverted_from/>
+        <source>407e62f51bb088507e9211fc2d4bcba7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>brian.nguyen</sys_created_by>
+        <sys_created_on>2019-09-05 16:58:21</sys_created_on>
+        <sys_id>c74f5b841b7f33407e9211fc2d4bcb66</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_recorded_at>16d025cd78e0000001</sys_recorded_at>
+        <sys_updated_by>brian.nguyen</sys_updated_by>
+        <sys_updated_on>2019-10-30 16:57:10</sys_updated_on>
+        <type>Item Stream</type>
+        <update_guid>8f4f5b840f7f3340e198098cd4b2cc65</update_guid>
+        <update_guid_history>8f4f5b840f7f3340e198098cd4b2cc65:-141179331,857c1f3b61273340a1ce9db51c8eb0d3:1690438776</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>brian.nguyen</sys_created_by>
+        <sys_created_on>2019-09-30 15:33:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_sg_item_stream">sys_sg_item_stream</sys_db_object>
+        <sys_id>3b07ff9284f24658b037ae332fda0110</sys_id>
+        <sys_metadata>dc7c573bdb27334019fe52f8f496198f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Barclays Remortgage Item Stream</sys_name>
+        <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+        <sys_scope_delete display_value="">0363a5c818c24d0080425a8083a10000</sys_scope_delete>
+        <sys_update_name>sys_sg_item_stream_dc7c573bdb27334019fe52f8f496198f</sys_update_name>
+        <sys_update_version display_value="sys_sg_item_stream_dc7c573bdb27334019fe52f8f496198f">c74f5b841b7f33407e9211fc2d4bcb66</sys_update_version>
+        <sys_updated_by>brian.nguyen</sys_updated_by>
+        <sys_updated_on>2019-09-30 15:33:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

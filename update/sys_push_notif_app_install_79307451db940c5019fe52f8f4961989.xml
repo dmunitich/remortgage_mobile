@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_push_notif_app_install">
+    <sys_push_notif_app_install action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <last_registered_on>2019-10-27 12:44:47</last_registered_on>
+        <sys_class_name>sys_push_notif_app_install</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-03 21:57:13</sys_created_on>
+        <sys_id>79307451db940c5019fe52f8f4961989</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>5747a84965c94fa09ec217322507ae8a452129aa0a99e100e759c7ba49eb5808</sys_name>
+        <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+        <sys_policy/>
+        <sys_push_application_id display_value="ServiceNow Classic Mobile Application">ab704041ff1102009738ffffffffff33</sys_push_application_id>
+        <sys_push_platform_id display_value="Apple">20e71f30ff0002009738ffffffffff6b</sys_push_platform_id>
+        <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+        <sys_update_name>sys_push_notif_app_install_79307451db940c5019fe52f8f4961989</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-27 12:44:47</sys_updated_on>
+        <sys_user_id display_value="Patrick Administrator">6816f79cc0a8016401c5a33be04be441</sys_user_id>
+        <token>5747a84965c94fa09ec217322507ae8a452129aa0a99e100e759c7ba49eb5808</token>
+    </sys_push_notif_app_install>
+</record_update>

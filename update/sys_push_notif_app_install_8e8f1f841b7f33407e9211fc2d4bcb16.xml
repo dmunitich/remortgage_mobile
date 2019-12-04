@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_push_notif_app_install">
+    <sys_push_notif_app_install action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <last_registered_on>2019-09-16 15:57:34</last_registered_on>
+        <sys_class_name>sys_push_notif_app_install</sys_class_name>
+        <sys_created_by>brian.nguyen</sys_created_by>
+        <sys_created_on>2019-09-05 16:59:23</sys_created_on>
+        <sys_id>8e8f1f841b7f33407e9211fc2d4bcb16</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>AC9BFC2BE9049AD6D2D6338C04A460DFA7296A4B9E7851E86E3610A5D5905D30</sys_name>
+        <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+        <sys_policy/>
+        <sys_push_application_id display_value="ServiceNow Mobile Application">05ed2fb177002300258da2e2c81061c2</sys_push_application_id>
+        <sys_push_platform_id display_value="Apple">20e71f30ff0002009738ffffffffff6b</sys_push_platform_id>
+        <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+        <sys_update_name>sys_push_notif_app_install_8e8f1f841b7f33407e9211fc2d4bcb16</sys_update_name>
+        <sys_updated_by>brian.nguyen</sys_updated_by>
+        <sys_updated_on>2019-09-16 15:57:41</sys_updated_on>
+        <sys_user_id display_value="Brian Nguyen">25c52ab7dbafff0019fe52f8f496194e</sys_user_id>
+        <token>AC9BFC2BE9049AD6D2D6338C04A460DFA7296A4B9E7851E86E3610A5D5905D30</token>
+    </sys_push_notif_app_install>
+</record_update>

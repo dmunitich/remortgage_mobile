@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_ui_parameter">
+    <sys_sg_ui_parameter action="DELETE">
+        <button display_value="New Button (Barclays Remortgage)">d47cdb3bdb27334019fe52f8f49619c9</button>
+        <button_parent_table/>
+        <carried>false</carried>
+        <constant/>
+        <default_value/>
+        <default_value_type>none</default_value_type>
+        <field_name>required_gender</field_name>
+        <input_source>user</input_source>
+        <input_style>inline</input_style>
+        <input_type>text</input_type>
+        <mandatory>false</mandatory>
+        <multi_select>false</multi_select>
+        <name>Amount to Borrow</name>
+        <order>2600</order>
+        <parameter_type>button</parameter_type>
+        <placeholder/>
+        <screen/>
+        <search_type>starts_with</search_type>
+        <source_field/>
+        <sys_class_name>sys_sg_ui_parameter</sys_class_name>
+        <sys_created_by>brian.nguyen</sys_created_by>
+        <sys_created_on>2019-09-05 16:44:17</sys_created_on>
+        <sys_id>741cd3001b7f33407e9211fc2d4bcb20</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Amount to Borrow</sys_name>
+        <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+        <sys_update_name>sys_sg_ui_parameter_741cd3001b7f33407e9211fc2d4bcb20</sys_update_name>
+        <sys_updated_by>brian.nguyen</sys_updated_by>
+        <sys_updated_on>2019-09-05 16:49:04</sys_updated_on>
+        <table_name>x_snc_remortgage_a_barclays_remortgage</table_name>
+    </sys_sg_ui_parameter>
+    <sys_translated_text action="delete_multiple" query="documentkey=741cd3001b7f33407e9211fc2d4bcb20"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</application>
+        <file_path/>
+        <instance_id>080cc80cdb2ffb400ae3ac44d4961906</instance_id>
+        <instance_name>csmbarclaydemo</instance_name>
+        <name>sys_sg_ui_parameter_741cd3001b7f33407e9211fc2d4bcb20</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_ui_parameter"><sys_sg_ui_parameter action="INSERT_OR_UPDATE"><button display_value="New Button (Barclays Remortgage)">d47cdb3bdb27334019fe52f8f49619c9</button><button_parent_table/><carried>false</carried><constant/><default_value/><default_value_type>none</default_value_type><field_name>required_gender</field_name><input_source>user</input_source><input_style>inline</input_style><input_type>text</input_type><mandatory>false</mandatory><multi_select>false</multi_select><name>Amount to Borrow</name><order>2600</order><parameter_type>button</parameter_type><placeholder/><screen/><search_type>starts_with</search_type><source_field/><sys_class_name>sys_sg_ui_parameter</sys_class_name><sys_created_by>brian.nguyen</sys_created_by><sys_created_on>2019-09-05 16:44:17</sys_created_on><sys_id>741cd3001b7f33407e9211fc2d4bcb20</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Amount to Borrow</sys_name><sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package><sys_policy/><sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope><sys_update_name>sys_sg_ui_parameter_741cd3001b7f33407e9211fc2d4bcb20</sys_update_name><sys_updated_by>brian.nguyen</sys_updated_by><sys_updated_on>2019-09-05 16:49:04</sys_updated_on><table_name>x_snc_remortgage_a_barclays_remortgage</table_name></sys_sg_ui_parameter><sys_translated_text action="delete_multiple" query="documentkey=741cd3001b7f33407e9211fc2d4bcb20"/></record_update>]]></payload>
+        <payload_hash>-500509352</payload_hash>
+        <record_name>Amount to Borrow</record_name>
+        <reverted_from/>
+        <source>407e62f51bb088507e9211fc2d4bcba7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>brian.nguyen</sys_created_by>
+        <sys_created_on>2019-09-05 16:49:04</sys_created_on>
+        <sys_id>3a2d53801b7f33407e9211fc2d4bcb82</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_recorded_at>16d025455030000001</sys_recorded_at>
+        <sys_updated_by>brian.nguyen</sys_updated_by>
+        <sys_updated_on>2019-10-30 16:57:10</sys_updated_on>
+        <type>UI parameter</type>
+        <update_guid>fe2d53809a7f334066134de57e0f7881</update_guid>
+        <update_guid_history>fe2d53809a7f334066134de57e0f7881:-500509352,741cd300c77f3340e974af20c8427621:141452250</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>brian.nguyen</sys_created_by>
+        <sys_created_on>2019-09-30 15:33:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_sg_ui_parameter">sys_sg_ui_parameter</sys_db_object>
+        <sys_id>0223ba71113b4ed880aeb99ee2e84264</sys_id>
+        <sys_metadata>741cd3001b7f33407e9211fc2d4bcb20</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Amount to Borrow</sys_name>
+        <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+        <sys_scope_delete display_value="">0363a5c818c24d0080425a8083a10000</sys_scope_delete>
+        <sys_update_name>sys_sg_ui_parameter_741cd3001b7f33407e9211fc2d4bcb20</sys_update_name>
+        <sys_update_version display_value="sys_sg_ui_parameter_741cd3001b7f33407e9211fc2d4bcb20">3a2d53801b7f33407e9211fc2d4bcb82</sys_update_version>
+        <sys_updated_by>brian.nguyen</sys_updated_by>
+        <sys_updated_on>2019-09-30 15:33:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

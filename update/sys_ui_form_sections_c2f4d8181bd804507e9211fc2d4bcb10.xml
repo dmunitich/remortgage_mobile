@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="c2f4d8181bd804507e9211fc2d4bcb10" sys_domain="global" table="x_snc_barclay_remo_remortgage_applications" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-09-30 17:24:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8ef4d8181bd804507e9211fc2d4bcb12</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_barclay_remo_remortgage_applications" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">c2f4d8181bd804507e9211fc2d4bcb10</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">c6f498181bd804507e9211fc2d4bcbfc</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-09-30 17:24:15</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-09-30 17:24:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4ef4d8181bd804507e9211fc2d4bcb13</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_barclay_remo_remortgage_applications" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">c2f4d8181bd804507e9211fc2d4bcb10</sys_ui_form>
+            <sys_ui_section caption="Employment Fields" display_value="Employment Fields" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">42f498181bd804507e9211fc2d4bcbfe</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-09-30 17:24:15</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-09-30 17:24:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>86f4d8181bd804507e9211fc2d4bcb17</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_barclay_remo_remortgage_applications" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">c2f4d8181bd804507e9211fc2d4bcb10</sys_ui_form>
+            <sys_ui_section caption="Revaluation Details" display_value="Revaluation Details" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">42f498181bd804507e9211fc2d4bcbff</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-09-30 17:24:15</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-09-30 17:24:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0af4d8181bd804507e9211fc2d4bcb27</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_barclay_remo_remortgage_applications" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">c2f4d8181bd804507e9211fc2d4bcb10</sys_ui_form>
+            <sys_ui_section caption="Non Recurring Item Details" display_value="Non Recurring Item Details" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">02f4d8181bd804507e9211fc2d4bcb00</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-09-30 17:24:15</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 15:39:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>65a681e8db94c45019fe52f8f4961976</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_barclay_remo_remortgage_applications" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">c2f4d8181bd804507e9211fc2d4bcb10</sys_ui_form>
+            <sys_ui_section caption="Future Affordability" display_value="Future Affordability" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">25a681e8db94c45019fe52f8f4961971</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 15:39:47</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 16:19:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b3bf4da8dbd4c45019fe52f8f496199e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_barclay_remo_remortgage_applications" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">c2f4d8181bd804507e9211fc2d4bcb10</sys_ui_form>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 16:19:31</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>6</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-09-30 17:24:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c6f4d8181bd804507e9211fc2d4bcb2b</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_barclay_remo_remortgage_applications" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">c2f4d8181bd804507e9211fc2d4bcb10</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">cef4d8181bd804507e9211fc2d4bcb00</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 16:19:32</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>7</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-09-30 17:24:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8af4d8181bd804507e9211fc2d4bcb2f</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_barclay_remo_remortgage_applications" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">c2f4d8181bd804507e9211fc2d4bcb10</sys_ui_form>
+            <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">06f4d8181bd804507e9211fc2d4bcb0e</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 16:19:32</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>8</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-09-30 17:24:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>42f4d8181bd804507e9211fc2d4bcb34</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_barclay_remo_remortgage_applications" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">c2f4d8181bd804507e9211fc2d4bcb10</sys_ui_form>
+            <sys_ui_section caption="Special Handing Notes" display_value="Special Handing Notes" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">82f4d8181bd804507e9211fc2d4bcb0f</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 16:19:32</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_barclay_remo_remortgage_applications</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-09-30 17:24:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c2f4d8181bd804507e9211fc2d4bcb10</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_barclay_remo_remortgage_applications</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+            <sys_update_name>sys_ui_form_sections_c2f4d8181bd804507e9211fc2d4bcb10</sys_update_name>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-09-30 17:24:15</sys_updated_on>
+            <sys_user/>
+            <view display_value="Barclay" name="Barclay">f5f498181bd804507e9211fc2d4bcbf7</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_snc_barclay_remo.remortgage_applications_user" name="x_snc_barclay_remo.remortgage_applications_user">882cff0c1b1804507e9211fc2d4bcb1d</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>brian.nguyen</sys_created_by>
+        <sys_created_on>2019-09-30 15:35:42</sys_created_on>
+        <sys_id>4c2cff0c1b1804507e9211fc2d4bcb21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>882cff0c1b1804507e9211fc2d4bcb1d</sys_name>
+        <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+        <sys_update_name>sys_embedded_help_role_4c2cff0c1b1804507e9211fc2d4bcb21</sys_update_name>
+        <sys_updated_by>brian.nguyen</sys_updated_by>
+        <sys_updated_on>2019-09-30 15:35:42</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

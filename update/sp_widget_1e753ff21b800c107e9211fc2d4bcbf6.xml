@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope, $window, $location) {
+  /* widget controller */
+  var c = this;
+	c.firstPage = true;
+	$scope.secondPage = function(){
+		c.firstPage = false;
+		var remortgageUpdate = document.querySelector('input[name="RemortgageUpdate"]:checked').value;
+
+		if(c.data.sys_id && remortgageUpdate == 'true'){
+			c.listPage = true;
+		}else if(!c.data.sys_id && remortgageUpdate == 'true'){
+			c.listPage = true;
+			c.noRemortgage = true;
+		}
+		else if(c.data.sys_id && remortgageUpdate == 'false'){
+			$location.url('mbc?id=remortgage_details&table=x_snc_barclay_remo_remortgage_applications&sys_id='+ c.data.sys_id + '&view=barclay');
+		}else if(!c.data.sys_id && remortgageUpdate == 'false'){
+			c.listPage = true;
+			c.noRemortgage = true;
+		}
+	}
+	$(document).ready(function(){
+		$('input[name=RemortgageUpdate]').click(function(){
+			document.getElementById("continue").classList.remove("disabled");
+		})
+	});
+	$(document).ready(function(){
+		$('input[name=Category]').click(function(){
+			document.getElementById("SecondContinue").classList.remove("disabled");
+		})
+	});
+	$(document).ready(function(){
+		$('input[name=extraInformation]').click(function(){
+			document.getElementById("extraContinue").classList.remove("disabled");
+		})
+	});
+	$scope.detailsPage = function(){
+		c.details = document.querySelector('input[name=Category]:checked').value;
+		if(c.details == 'employment'){
+			c.employmentPage = true;
+			c.listPage = false;
+		} else{
+			c.listPage = false;
+			c.affordabilityPage = true;
+		}
+	}
+	$scope.extraInformation = function(){
+		c.otherPage = false;
+		var extraInformation = document.querySelector('input[name="extraInformation"]:checked').value;
+		
+		if(extraInformation == 'true'){
+			c.listPage = true;
+		}else{
+			$location.url('mbc?id=remortgage_details&table=x_snc_barclay_remo_remortgage_applications&sys_id='+ c.data.sys_id + '&view=barclay');
+		}
+	}
+	$scope.submitAffordabilityDetails = function(){
+		c.affordabilityPage = false;
+		c.otherPage = true;
+		c.data.affordDetails = true;
+		c.server.update();
+	}
+	$scope.submitEmploymentDetails = function(){
+		c.employmentPage = false; 
+		c.otherPage = true; 
+		c.data.detailSubmit = true;
+		c.data.startDate = c.data.startYear + "-" + c.data.startMonth + "-" + c.data.startDay;
+		c.server.update();
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.first-page-wrapper{
+  display:flex;
+  width:104%;
+}
+.section-header{
+	color:#00aeef;
+}
+hr{
+  width:100%;
+  border-color:#00aeef;
+}
+.first-page-radio{
+	width:50%; 
+  margin-right:15px;
+}
+h2, p, h4, h3, h1{
+  color:#000;
+}
+.Habito__RadioInput__Container{
+  background-color:#fff;
+}
+.Habito__RadioInput__Input:checked+.Habito__RadioInput .Habito__RadioInput__Container {
+  background-color:#00395d !important;
+  border-color:#00395d !important;
+}
+.continue-button{
+  font-family: Roboto,Helvetica,"sans-serif";
+  width:100%;
+  background-color:#00aeef;
+  border-radius:5px;
+  color:#fff;
+  height:40px;
+  font-weight:bold;
+  font-size: 18px;
+  border:0;
+  margin-top:15px;
+}
+.disabled{
+  pointer-events:none;
+  background-color:#aaa;
+}
+.back-button{
+	background-color:#0076b6;
+  color:#fff;
+	font-family: Roboto,Helvetica,"sans-serif";
+  width:100%;
+  border-radius:5px;
+  height:40px;
+  font-weight:bold;
+  font-size: 18px;
+  border:0;
+ 	margin-top:5px;
+  margin-bottom:35px;
+}
+.Habito__TextInput, .Habito__SelectInput, .Habito__TelNoInput__Number,
+.Habito__DateQuestion__Container, .Habito__CurrencyInput, .bottom-space{
+  margin-bottom:35px;
+}
+.sub-header{
+	color:#767673;
+}
+.address{
+  margin-bottom:10px !important;
+}
+.Habito__TelNoInput__Prefix{
+	padding:13.5px 20px;
+  margin-right:-5px;
+}
+
+.main{
+	width:90vw;
+  margin-left:10px;
+  margin-right:10px;
+  
+}
+.landing-paragraph{
+	font-size: 1.7rem;
+  font-weight:200;
+  color: #000;
+}
+.landing-header{
+	font-weight:200;
+}
+.blue-square{
+	width:5px;
+  height:100%;
+  background-color:#00aeef;
+  float:left; 
+  margin-right: 10px;
+  margin-top:10px;
+}
+.second-section{
+  height:50px;
+}
+.decision-information{
+	padding-inline-start: 15px;
+  color: #000;
+}
+li.list-information{
+  font-size: 1.7rem;
+  font-weight:200;
+  color: #000;
+  margin-bottom:10px;
+}
+.second-header{
+	font-weight:400;
+}
+.second-blue-square{
+	width:5px;
+  height:65%;
+  background-color:#00aeef;
+  float:left; 
+  margin-right: 10px;
+	margin-top:10px;
+}
+.third-section{
+  height:35px;
+
+}
+.basic{
+	background-color:#00aeef;
+  color: #fff;
+  text-align:center;
+  width:40vw;
+}
+.start{
+  float:right;
+}
+.continue{
+  float:left;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>remortgage_update</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Remortgage Update</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	var remortgage = new GlideRecord('x_snc_barclay_remo_remortgage_applications');
+	remortgage.addQuery('opened_by', gs.getUserID());
+	remortgage.query();
+	var noRemortgage = false;
+	if(remortgage.next()){
+		data.sys_id = remortgage.sys_id.getDisplayValue();
+		data.employerName = remortgage.employer_name.getDisplayValue();
+		data.employerAddress = remortgage.employer_address.getDisplayValue();
+		data.employerPostcode = remortgage.postcode.getDisplayValue();
+		data.employerCountry = remortgage.country.getDisplayValue();
+		data.employmentType = remortgage.getValue('employment_type');
+		data.employerStatus = remortgage.employer_status.getDisplayValue();
+		data.occupation = remortgage.occupation.getDisplayValue();
+		data.workPhone = remortgage.work_telephone_number.getDisplayValue();
+		var startDate = remortgage.employment_start_date.getDisplayValue();
+		startDate = startDate.split('-');
+		data.startDay = parseInt(startDate[2]);
+		data.startMonth = parseInt(startDate[1]);
+		data.startYear = parseInt(startDate[0]);
+		data.incomeType = remortgage.income_type.getDisplayValue();
+		data.income = remortgage.income_amount.getDisplayValue();
+		data.income = data.income.split('£');
+		data.income = data.income[1];
+		data.incomeFrequency = remortgage.income_frequency.getDisplayValue();
+		data.paycheckAmount = remortgage.net_income.getDisplayValue();
+		data.paycheckAmount = data.paycheckAmount.split('£');
+		data.paycheckAmount = data.paycheckAmount[1];
+		data.revaluation = remortgage.re_valuation_of_assets_last_2_years.getDisplayValue();
+		data.revaluationDetails = remortgage.re_valuation_details.getDisplayValue();
+		data.recurringItem = remortgage.non_recurring_items.getDisplayValue();
+		data.itemAmount = remortgage.amount_of_non_recurring_items.getDisplayValue();
+		data.recurringDetails = remortgage.non_recurring_items_details.getDisplayValue();
+		data.otherLoans = remortgage.other_loans.getDisplayValue();
+		data.commitments = remortgage.other_commitments.getDisplayValue();
+		data.pre = remortgage.property_related_expenses.getDisplayValue();
+		data.changes = remortgage.personal_changes.getDisplayValue();
+		data.totalSavings = remortgage.total_savings.getDisplayValue();
+		data.totalSavings = data.totalSavings.split('£');
+		data.totalSavings = data.totalSavings[1];
+		data.totalInvestments = remortgage.total_investments.getDisplayValue();
+		data.totalInvestments = data.totalInvestments.split('£');
+		data.totalInvestments = data.totalInvestments[1];
+		data.propertyValue = remortgage.property_value.getDisplayValue();
+		data.propertyValue = data.propertyValue.split('£');
+		data.propertyValue = data.propertyValue[1];
+		data.purchasePrice = remortgage.purchase_price.getDisplayValue();
+		data.purchasePrice = data.purchasePrice.split('£');
+		data.purchasePrice = data.purchasePrice[1];
+		data.totalLoan = remortgage.total_required.getDisplayValue();
+		data.totalLoan = data.totalLoan.split('£');
+		data.totalLoan = data.totalLoan[1];
+		data.portExisting = remortgage.existing_product.getDisplayValue();
+		data.productCode = remortgage.product_code.getDisplayValue();
+		data.addedFee = remortgage.customer_added_fee.getDisplayValue();
+		data.depositAmount = remortgage.deposit_amount.getDisplayValue();
+		data.depositAmount = data.depositAmount.split('£');
+		data.depositAmount = data.depositAmount[1];
+		data.depositSource = remortgage.source_deposit.getDisplayValue();
+		data.repaymentMethod = remortgage.repayment_method.getDisplayValue();
+		data.yearLength = remortgage.year_length.getDisplayValue();
+		data.monthLength = remortgage.month_length.getDisplayValue();
+		data.numApplicants = parseInt(remortgage.total_applicants.getDisplayValue());
+		data.numChildDependants = parseInt(remortgage.child_dependents.getDisplayValue());
+		data.numAdultDependants = parseInt(remortgage.adult_dependents.getDisplayValue());
+		data.purpose = remortgage.loan_purpose.getDisplayValue();
+		data.paymentMethod = remortgage.payment_method.getDisplayValue();
+		var payDate = remortgage.pay_date.getDisplayValue();
+		payDate = payDate.split('-');
+		data.payDay = parseInt(payDate[2]);
+		data.payMonth = parseInt(payDate[1]);
+		data.payYear = parseInt(payDate[0]);
+		data.repayStrategy = remortgage.repay_strategy.getDisplayValue();
+	} else{
+			noRemortgage = true;
+	}
+	if(input && input.detailSubmit){
+		if(noRemortgage){
+			remortgage = new GlideRecord('x_snc_barclay_remo_remortgage_applications');
+		}
+		remortgage.setValue('employer_name' , input.employerName );
+		remortgage.setValue('employer_address' , input.employerAddress );
+		remortgage.setValue('postcode' , input.employerPostcode );
+		remortgage.setValue('country' , input.employerCountry );
+		remortgage.setValue('employment_type' , input.employmentType );
+		remortgage.setValue('employer_status', input.employerStatus);
+		remortgage.setValue('occupation' , input.occupation );
+		remortgage.setValue('work_telephone_number' , input.workPhone );
+		remortgage.setValue('employment_start_date' , input.startDate );
+		remortgage.setValue('income_type' , input.incomeType );
+		remortgage.setValue('income_amount' , "GBP;" + input.income);
+		remortgage.setValue('income_frequency' , input.incomeFrequency );
+		remortgage.setValue('net_income' , "GBP;" + input.paycheckAmount);
+		remortgage.setValue('re_valuation_of_assets_last_2_years' , input.revaluation );
+		remortgage.setValue('re_valuation_details' , input.revaluationDetails );
+		remortgage.setValue('non_recurring_items' , input.recurringItem );
+		remortgage.setValue('amount_of_non_recurring_items' , input.itemAmount );
+		remortgage.setValue('non_recurring_items_details' , input.recurringDetails );
+		if(noRemortgage){
+			remortgage.insert();
+			data.sys_id = remortgage.sys_id.getDisplayValue();
+		}else{
+			remortgage.update();
+		}
+		
+	}
+	if(input && input.affordDetails){
+		if(noRemortgage){
+			remortgage = new GlideRecord('x_snc_barclay_remo_remortgage_applications');
+		}
+		remortgage.setValue('other_loans' , input.otherLoans );
+		remortgage.setValue('other_commitments' , input.commitments );
+		remortgage.setValue('property_related_expenses' , input.pre );
+		remortgage.setValue('personal_changes' , input.changes );
+		remortgage.setValue('total_savings' , "GBP;" + input.totalSavings );
+		remortgage.setValue('total_investments', "GBP;" + input.totalInvestments);
+		remortgage.setValue('property_value' , "GBP;" + input.propertyValue );
+		remortgage.setValue('purchase_price' , "GBP;" + input.purchasePrice );
+		remortgage.setValue('total_required' , "GBP;" + input.totalLoan );
+		remortgage.setValue('existing_product' , input.portExisting );
+		remortgage.setValue('product_code' , input.productCode );
+		remortgage.setValue('customer_added_fee' , input.addedFee );
+		remortgage.setValue('deposit_amount' , "GBP;" + input.depositAmount);
+		remortgage.setValue('source_deposit' , input.depositSource );
+		remortgage.setValue('repayment_method' , input.repaymentMethod );
+		remortgage.setValue('year_length' , input.yearLength );
+		remortgage.setValue('month_length' , input.monthLength );
+		remortgage.setValue('total_applicants' , input.numApplicants );
+		remortgage.setValue('child_dependents' , input.numChildDependants );
+		remortgage.setValue('adult_dependents' , input.numAdultDependants );
+		remortgage.setValue('loan_purpose' , input.purpose );
+		remortgage.setValue('payment_method' , input.paymentMethod );
+		remortgage.setValue('pay_date' , input.payYear + "-" + input.payMonth + "-" + input.payDay);
+		remortgage.setValue('repay_strategy' , input.repayStrategy );
+		if(noRemortgage){
+			remortgage.insert();
+			data.sys_id = remortgage.sys_id.getDisplayValue();
+		}else{
+			remortgage.update();
+		}
+		
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>brian.nguyen</sys_created_by>
+        <sys_created_on>2019-09-26 17:54:15</sys_created_on>
+        <sys_id>1e753ff21b800c107e9211fc2d4bcbf6</sys_id>
+        <sys_mod_count>276</sys_mod_count>
+        <sys_name>Remortgage Update</sys_name>
+        <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+        <sys_update_name>sp_widget_1e753ff21b800c107e9211fc2d4bcbf6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-25 16:53:24</sys_updated_on>
+        <template><![CDATA[<div ng-show="c.firstPage">
+  <h1 class="landing-header">
+    Apply for a mortgage
+  </h1>
+  <p class="landing-paragraph">
+    You can appy over the phone, in branch or online.
+    <br>
+    <br>
+    Applying for a mortgage with MortgagesNow is simple. It 
+    involves two key stages: getting Decision in 
+    Principle (sometimes called an Agreement in 
+    Principle), and then making am ortgage application.
+    <br>
+  </p>
+  <div class="second-section">
+    <div class="blue-square">
+
+    </div>
+    <h2 class="second-header">
+      Getting your Decision in Principle
+    </h2>
+    <p>
+      Applying for a Decision in Principle can be 
+      done over the phone, in branch or online.
+      <br>
+    </p>
+    <ul class="decision-information">
+      <li class="list-information">A decision in Principle will give you an
+        indication of the amount you may be able 
+        to borrow based on what you tell us and
+        our security checks, including a soft credit
+        check. A soft credit check will include an
+        initial enquiry against your credit history
+        and it will have no impact on your credit
+        score. This won't be seen in searches by
+        other companies.</li>
+      <li class="list-information">When it comes to considering your
+        application, we'll perform a full credit 
+        check, which may highlight anything in 
+        your credit history that would affect a
+        mortgage application. A full credit check is
+        a complete check against your credit
+        history which is recorded on your credit file
+        and is visible in searches by other
+        companies.
+      </li>
+      <li class="list-information">
+        A Decision in Principle is useful to have if
+        you are house hunting, to show estate
+        agents that you’re serious about buying a 
+        property. Please note a Decision in Principle
+        is not an offer to lend to you and does not 
+        mean you are committing to apply for a 
+        Barclays mortgage.
+      </li>
+    </ul>
+    <div class="second-blue-square">
+    </div>
+    <h2 class="second-header">
+      Let's see if we can help
+    </h2>
+    <p class="landing-paragraph">
+      Has there been any changes to your remortgage
+      application such as your personal details,
+      property value, employment details, or 
+      financial information?
+    </p>
+    <div class="Habito__RadioQuestionWrapper--flat first-page-wrapper">
+      <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="RemortgageUpdate" id="NeedsUpdate" value="true">
+      <label for="NeedsUpdate" class="Habito__RadioInput first-page-radio">
+        <div class="Habito__RadioInput__Container">
+          <div class="Habito__RadioInput__Radio--outer">
+            <div class="Habito__RadioInput__Radio--inner">
+            </div>
+          </div>Yes
+        </div>
+      </label>
+      <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="RemortgageUpdate" id="NoUpdate" value="false">
+      <label for="NoUpdate" class="Habito__RadioInput first-page-radio">
+        <div class="Habito__RadioInput__Container">
+          <div class="Habito__RadioInput__Radio--outer">
+            <div class="Habito__RadioInput__Radio--inner">
+            </div>
+          </div>No
+        </div>
+      </label>
+    </div>
+    <button ng-click="secondPage()" class="continue-button disabled bottom-space" id="continue">
+      Continue
+    </button>
+  </div>
+</div>
+
+<div ng-show="c.listPage">
+  <h2 ng-show="!c.noRemortgage">
+    Hopefully we can make this easy for you!
+  </h2>
+  <p ng-show="!c.noRemortgage">
+    What information do you need to update?
+  </p>
+  <h2 ng-show="c.noRemortgage">
+    Oh no! It looks like you don't have an existing remortgage.
+  </h2>
+  <p ng-show="c.noRemortgage">
+    Please fill out each of the sections below to start a remortgage.
+  </p>
+  <div class="Habito__RadioQuestionWrapper--flat">
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="Category" id="General" value="general">
+    <label for="General" class="Habito__RadioInput">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>General Application Details
+      </div>
+    </label>
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="Category" id="Applicant" value="applicant">
+    <label for="Applicant" class="Habito__RadioInput">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>Applicant Details
+      </div>
+    </label>
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="Category" id="Occupancy" value="occupancy">
+    <label for="Occupancy" class="Habito__RadioInput">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>Occupancy Details
+      </div>
+    </label>
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="Category" id="ExistingLender" value="existingLender">
+    <label for="ExistingLender" class="Habito__RadioInput">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>Existing Lender Details
+      </div>
+    </label>
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="Category" id="Employment" value="employment">
+    <label for="Employment" class="Habito__RadioInput">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>Employment Details
+      </div>
+    </label>
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="Category" id="Affordability" value="affordability">
+    <label for="Affordability" class="Habito__RadioInput">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>Affordability
+      </div>
+    </label>
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="Category" id="Property" value="property">
+    <label for="Property" class="Habito__RadioInput">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>Property Details
+      </div>
+    </label>
+  </div>
+  <button ng-click="detailsPage()" class="continue-button disabled" id="SecondContinue">
+    Continue
+  </button>
+  <button ng-click="c.firstPage = true; c.listPage = false;" class="back-button" id="SecondBack">
+    Back
+  </button>
+</div>
+
+<div ng-if="c.employmentPage">
+  <h2>
+    Employment Details
+  </h2>
+  <p>
+    These are questions about your employer as well
+    as your occupation details. Please fill them out
+    to the best of your ability.
+  </p>
+  <h4>
+    What is your Employer's name?
+  </h4>
+  <p class="sub-header">
+    First and Last name are the only ones required!
+  </p>
+  <input class="Habito__TextInput " type="text" autocomplete="!" placeholder="Employer Name" ng-model="c.data.employerName" value="">
+  <h4>
+    Where is your Employer's address?  
+  </h4>
+  <p class="sub-header">
+    Use the office you report to, not headquarters
+  </p>
+  <input class="Habito__TextInput address" type="text" autocomplete="!" placeholder="Employer Address" ng-model="c.data.employerAddress" value="">
+  <input class="Habito__TextInput address" type="text" autocomplete="!" placeholder="Postcode" ng-model="c.data.employerPostcode" value="">
+  <input class="Habito__TextInput" type="text" autocomplete="!" placeholder="Country" ng-model="c.data.employerCountry" value="">
+  <h4>
+    What is your Employment Type?
+  </h4>
+  <select class="Habito__SelectInput" required="" aria-describedby="primary/title-tooltip" ng-model="c.data.employmentType">
+    <option disabled="" value="" style="display: none;">Please select</option>
+    <option value="Full">Full Time</option>
+    <option value="Part">Part Time</option>
+    <option value="Apprentice">Apprentice/Trainee</option>
+    <option value="Labour Hire">Employment Agency Staff/Labour Hire</option>
+    <option value="Contractor">Contractor/Sub-Contractor</option>
+  </select>
+  <h4>
+    What is your Employer's status?
+  </h4>
+  <input class="Habito__TextInput " type="text" autocomplete="!" placeholder="Employer Status" ng-model="c.data.employerStatus" value="">
+  <h4>
+    What is the name of your Occupation?
+  </h4>
+  <p>
+    Please use your official title.
+  </p>
+  <input class="Habito__TextInput " type="text" autocomplete="!" placeholder="Occupation" ng-model="c.data.occupation" value="">
+  <h4>
+    What is your office phone number?
+  </h4>
+  <span class="Habito__TelNoInput__Prefix">+44</span>
+  <input class="Habito__TelNoInput__Number" type="tel" maxlength="20" autocomplete="!" ng-model="c.data.workPhone" value="">
+  <h4>
+    When did you start working for your employer? 
+  </h4>
+  <p>
+    Use your hire date, not your first day of work
+  </p>
+  <fieldset class="Habito__DateQuestion">
+
+
+    <div class="Habito__DateQuestion__Container">
+      <input class="Habito__DateInput" type="number" min="0" placeholder="DD" autocomplete="!" aria-label="day" value="" ng-model="c.data.startDay">
+      <span class="Habito__DateQuestion__Interstitial" role="presentation">/</span>
+      <input class="Habito__DateInput" type="number" min="0" placeholder="MM" autocomplete="!" aria-label="month" value="" ng-model="c.data.startMonth">
+      <span class="Habito__DateQuestion__Interstitial" role="presentation">/</span>
+      <input class="Habito__DateInput" type="number" min="0" placeholder="YYYY" autocomplete="!" aria-label="year" value="" ng-model="c.data.startYear">
+    </div>
+  </fieldset>
+  <h3>
+    Employment Income
+  </h3>
+ 
+  <p>
+    Please fill out the information about the income received from your employer.
+  </p>
+  <h4>
+    What is your income type?
+  </h4>
+  <input class="Habito__TextInput " type="text" autocomplete="!" placeholder="Income Type" ng-model="c.data.incomeType" value="">
+  <h4>
+    Income Amount
+  </h4>
+  <p>
+    How much is your total annual income?
+  </p>
+  <div class="Habito__CurrencyInput">
+    <span class="Habito__CurrencyInput__Symbol">£</span>
+    <input class="Habito__CurrencyInput__Number" type="text" autocomplete="!" placeholder="Annual Income" value="" ng-model="c.data.income">
+  </div>
+  <h4>
+    Income Frequency
+  </h4>
+  <p>
+    How often do you receive your paycheck?
+  </p>
+  <input class="Habito__TextInput " type="text" autocomplete="!" placeholder="E.g. semi-monthly, bi-monthly, etc." ng-model="c.data.incomeFrequency" value="">
+  <h4>
+    Net Income
+  </h4>
+  <p>
+    How much do you receive on average per paycheck?
+  </p>
+  <div class="Habito__CurrencyInput">
+    <span class="Habito__CurrencyInput__Symbol">£</span>
+    <input class="Habito__CurrencyInput__Number" type="text" autocomplete="!" placeholder="Paycheck Amount" value="" ng-model="c.data.paycheckAmount">
+  </div>
+  <h3>
+    Revaluation Details
+  </h3>
+  <h4>
+    Has any re-valuation of assets been carried out in the last 2 years?
+  </h4>
+  <div class="Habito__RadioQuestionWrapper--flat first-page-wrapper">
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="revaluation" id="YesRevaluation" value="true" ng-model="c.data.revaluation">
+    <label for="YesRevaluation" class="Habito__RadioInput first-page-radio">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>Yes
+      </div>
+    </label>
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="revaluation" id="NoRevaluation" value="false" ng-model="c.data.revaluation">
+    <label for="NoRevaluation" class="Habito__RadioInput first-page-radio">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>No
+      </div>
+    </label>
+  </div>
+  <input class="Habito__TextInput " type="text" autocomplete="!" placeholder="Details" ng-model="c.data.revaluationDetails" value="" ng-if="c.data.revaluation == 'true'">
+
+  <h3>
+    Non-Recurring Item Details
+  </h3>
+  <h4>
+    Are there any non-recurring items in your profit and loss account?
+  </h4>
+  <div class="Habito__RadioQuestionWrapper--flat first-page-wrapper">
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="recurringItems" id="YesRecurring" value="true" ng-model="c.data.recurringItem">
+    <label for="YesRecurring" class="Habito__RadioInput first-page-radio">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>Yes
+      </div>
+    </label>
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="recurringItems" id="NoRecurring" value="false" ng-model="c.data.recurringItem">
+    <label for="NoRecurring" class="Habito__RadioInput first-page-radio">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>No
+      </div>
+    </label>
+  </div>
+  <h4 ng-if="c.data.recurringItem=='true'">
+    Amount of non-recurring items
+  </h4>
+  <input class="Habito__TextInput address" type="text" autocomplete="!" placeholder="Amount" ng-model="c.data.itemAmount" value="" ng-if="c.data.recurringItem == 'true'">
+  <input class="Habito__TextInput " type="text" autocomplete="!" placeholder="Details" ng-model="c.data.recurringDetails" value="" ng-if="c.data.recurringItem == 'true'">
+  <button ng-click="submitEmploymentDetails()" class="continue-button" id="SecondContinue">
+    Submit
+  </button>
+  <button ng-click="c.employmentPage = false; c.listPage = true;" class="back-button" id="SecondBack">
+    Back
+  </button>
+</div>
+
+<div ng-show="c.otherPage">
+  <h2>
+    We've gone ahead and updated your remortgage!
+  </h2>
+  <p>
+    Do you have any other information you'd like to update, or would you like to see your
+    current remortgage now?
+  </p>
+  <div class="Habito__RadioQuestionWrapper--flat first-page-wrapper">
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="extraInformation" id="OtherInformation" value="true" ng-model="c.extraInformation">
+    <label for="OtherInformation" class="Habito__RadioInput first-page-radio">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>Update Information
+      </div>
+    </label>
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="extraInformation" id="NoInformation" value="false" ng-model="c.extraInformation">
+    <label for="NoInformation" class="Habito__RadioInput first-page-radio">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>Take me to my remortgage
+      </div>
+    </label>
+  </div>
+  <button ng-click="extraInformation();" class="continue-button disabled" id="extraContinue">
+    Continue
+  </button>
+  <button ng-click="c.otherPage = false; c.listPage = true;" class="back-button" id="SecondBack">
+    Back
+  </button>
+</div>
+
+<div ng-show="c.affordabilityPage">
+  <h2>
+    Affordability
+  </h2>
+  <p>
+    We want to ask you a few quick questions about your ability to afford and pay this mortgage in the foreseeable future.
+  </p>
+  <h3 class="section-header">
+    Future Affordability
+  </h3>
+  <hr>
+  <h4>
+    Other Loans
+  </h4>
+  <p>
+    Do you have any loans or other commitments not yet due, which will become payable during the. mortgage?
+  </p>
+  <div class="Habito__RadioQuestionWrapper--flat first-page-wrapper">
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="otherLoans" id="YesLoans" value="true" ng-model="c.data.otherLoans">
+    <label for="YesLoans" class="Habito__RadioInput first-page-radio">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>Yes
+      </div>
+    </label>
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="otherLoans" id="NoLoans" value="false" ng-model="c.data.otherLoans">
+    <label for="NoLoans" class="Habito__RadioInput first-page-radio">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>No
+      </div>
+    </label>
+  </div>
+  <h4>
+    Out of the Ordinary Commitments
+  </h4>
+  <p>
+   	Based on your circumstances, do you have any other commitments that are out
+    of the ordinary e.g. career related qualifications (Please do not include
+    anything here that you have detailed in 'Other Committed Expenditure').
+  </p>
+  <div class="Habito__RadioQuestionWrapper--flat first-page-wrapper">
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="commitments" id="YesCommitments" value="true" ng-model="c.data.commitments">
+    <label for="YesCommitments" class="Habito__RadioInput first-page-radio">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>Yes
+      </div>
+    </label>
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="commitments" id="NoCommitments" value="false" ng-model="c.data.commitments">
+    <label for="NoCommitments" class="Habito__RadioInput first-page-radio">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>No
+      </div>
+    </label>
+  </div>
+  <h4>
+    Property Related Expenses
+  </h4>
+  <p>
+   Do you have any plans for Property Related Expenses which will affect your
+    ability to pay this mortgage?
+  </p>
+  <div class="Habito__RadioQuestionWrapper--flat first-page-wrapper">
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="PRE" id="YesPRE" value="true" ng-model="c.data.pre">
+    <label for="YesPRE" class="Habito__RadioInput first-page-radio">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>Yes
+      </div>
+    </label>
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="PRE" id="NoPRE" value="false" ng-model="c.data.pre">
+    <label for="NoPRE" class="Habito__RadioInput first-page-radio">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>No
+      </div>
+    </label>
+  </div>
+  <h4>
+    Personal Changes
+  </h4>
+  <p>
+   Are there any personal changes that will affect your ability to pay this mortgage?
+    e.g. change to job, changes to income or expenditure?
+  </p>
+  <div class="Habito__RadioQuestionWrapper--flat first-page-wrapper">
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="changes" id="YesChanges" value="true" ng-model="c.data.changes">
+    <label for="YesChanges" class="Habito__RadioInput first-page-radio">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>Yes
+      </div>
+    </label>
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="changes" id="NoChanges" value="false" ng-model="c.data.changes">
+    <label for="NoChanges" class="Habito__RadioInput first-page-radio">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>No
+      </div>
+    </label>
+  </div>
+  <h3 class="section-header">
+    Savings
+  </h3>
+  <hr>
+  <h4>
+    Total Amount of Savings
+  </h4>
+  <div class="Habito__CurrencyInput">
+    <span class="Habito__CurrencyInput__Symbol">£</span>
+  <input class="Habito__CurrencyInput__Number" type="text" autocomplete="!" placeholder="Total Savings" ng-model="c.data.totalSavings" value="">
+  </div>
+  <h4>
+    Total Amount of Investments
+  </h4>
+  <div class="Habito__CurrencyInput">
+    <span class="Habito__CurrencyInput__Symbol">£</span>
+  <input class="Habito__CurrencyInput__Number" type="text" autocomplete="!" placeholder="Total Investments" ng-model="c.data.totalInvestments" value="">
+  </div>
+  <h3 class="section-header">
+    Loan Requirements
+  </h3>
+  <hr>
+  <h4>
+    Property Value
+  </h4>
+  <p>
+    Estimate of your current property value. You can use a 
+    value estimate tool on a site like www.Zillow.com
+  </p>
+  <div class="Habito__CurrencyInput">
+    <span class="Habito__CurrencyInput__Symbol">£</span>
+  <input class="Habito__CurrencyInput__Number" type="text" autocomplete="!" placeholder="Property Value" ng-model="c.data.propertyValue" value="">
+  </div>
+  <h4>
+    Purchase Price
+  </h4>
+  <p>
+    What was the price of the home when you initially purchased it?
+  </p>
+  <div class="Habito__CurrencyInput">
+    <span class="Habito__CurrencyInput__Symbol">£</span>
+  <input class="Habito__CurrencyInput__Number" type="text" autocomplete="!" placeholder="Purchase Price" ng-model="c.data.purchasePrice" value="">
+  </div>
+  <h4>
+    Porting an existing NatWest Product
+  </h4>
+  <div class="Habito__RadioQuestionWrapper--flat first-page-wrapper">
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="port" id="YesPort" value="true" ng-model="c.data.portExisting">
+    <label for="YesPort" class="Habito__RadioInput first-page-radio">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>Yes
+      </div>
+    </label>
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="port" id="NoPort" value="false" ng-model="c.data.portExisting">
+    <label for="NoPort" class="Habito__RadioInput first-page-radio">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>No
+      </div>
+    </label>
+  </div>
+  <h4>
+    Product Code
+  </h4>
+  <input class="Habito__TextInput " type="text" autocomplete="!" placeholder="Product Code" ng-model="c.data.productCode" value="">
+	<h4>
+    Total Amount Required
+  </h4>
+  <p>
+    How much of a loan are you requesting?
+  </p>
+  <div class="Habito__CurrencyInput">
+    <span class="Habito__CurrencyInput__Symbol">£</span>
+  <input class="Habito__CurrencyInput__Number" type="text" autocomplete="!" placeholder="Total Loan" ng-model="c.data.totalLoan" value="">
+  </div>
+  <h4>
+    Customer added fee to loan
+  </h4>
+  <div class="Habito__RadioQuestionWrapper--flat first-page-wrapper">
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="fee" id="YesFee" value="true" ng-model="c.data.addedFee">
+    <label for="YesFee" class="Habito__RadioInput first-page-radio">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>Yes
+      </div>
+    </label>
+    <input type="radio" class="Habito__RadioInput__Input Habito__Invisible" name="fee" id="NoFee" value="false" ng-model="c.data.addedFee">
+    <label for="NoFee" class="Habito__RadioInput first-page-radio">
+      <div class="Habito__RadioInput__Container">
+        <div class="Habito__RadioInput__Radio--outer">
+          <div class="Habito__RadioInput__Radio--inner">
+          </div>
+        </div>No
+      </div>
+    </label>
+  </div>
+  <h4>
+    Years
+  </h4>
+  <p>
+    In how many years do you expect to be able to pay off this loan?
+  </p>
+  <input class="Habito__TextInput " type="text" autocomplete="!" placeholder="Years" ng-model="c.data.yearLength" value="">
+	<h4>
+    Months
+  </h4>
+  <p>
+   	How many additional months will you need to pay off this loan? (can leave empty)
+  </p>
+  <input class="Habito__TextInput " type="text" autocomplete="!" placeholder="Months" ng-model="c.data.monthLength" value="">
+  <h4>
+    Loan Purpose
+  </h4>
+  <input class="Habito__TextInput " type="text" autocomplete="!" placeholder="Purpose" ng-model="c.data.purpose" value="">
+  <p>
+    Deposit Amount
+  </p>
+  <div class="Habito__CurrencyInput">
+    <span class="Habito__CurrencyInput__Symbol">£</span>
+  <input class="Habito__CurrencyInput__Number" type="text" autocomplete="!" placeholder="Deposit" ng-model="c.data.depositAmount" value="">
+  </div>
+  <h4>
+    Source of Deposit
+  </h4>
+  <input class="Habito__TextInput " type="text" autocomplete="!" placeholder="Source" ng-model="c.data.depositSource" value="">
+  <h4>
+    Repayment Method
+  </h4>
+  <input class="Habito__TextInput " type="text" autocomplete="!" placeholder="Repayment Method" ng-model="c.data.repaymentMethod" value="">
+  <h4>
+   	Total Number of Applicants
+  </h4>
+  <input class="Habito__TextInput " type="number" autocomplete="!" placeholder="# of Applicants" ng-model="c.data.numApplicants" value="">
+  <h4>
+   	Number of Dependants(Children)
+  </h4>
+  <input class="Habito__TextInput " type="number" autocomplete="!" placeholder="# of Dependants" ng-model="c.data.numChildDependants" value="">
+  <h4>
+   	Number of Dependants(Adult)
+  </h4>
+  <input class="Habito__TextInput " type="number" autocomplete="!" placeholder="# of Dependants" ng-model="c.data.numAdultDependants" value="">
+	<h4>
+   	Payment Method
+  </h4>
+  <input class="Habito__TextInput " type="text" autocomplete="!" placeholder="Method" ng-model="c.data.paymentMethod" value="">
+  <h3 class="section-header">
+    Mortgage Details
+  </h3>
+  <hr>
+  <h4>
+    Payment Due Date
+  </h4>
+  <fieldset class="Habito__DateQuestion">
+    <div class="Habito__DateQuestion__Container">
+      <input class="Habito__DateInput" type="number" min="0" placeholder="DD" autocomplete="!" aria-label="day" value="" ng-model="c.data.payDay">
+      <span class="Habito__DateQuestion__Interstitial" role="presentation">/</span>
+      <input class="Habito__DateInput" type="number" min="0" placeholder="MM" autocomplete="!" aria-label="month" value="" ng-model="c.data.payMonth">
+      <span class="Habito__DateQuestion__Interstitial" role="presentation">/</span>
+      <input class="Habito__DateInput" type="number" min="0" placeholder="YYYY" autocomplete="!" aria-label="year" value="" ng-model="c.data.payYear">
+    </div>
+  </fieldset>
+  <h4>
+   	I/O Repay Strategy
+  </h4>
+  <input class="Habito__TextInput " type="text" autocomplete="!" placeholder="Strategy" ng-model="c.data.repayStrategy" value="">
+  <button ng-click="submitAffordabilityDetails()" class="continue-button" id="SecondContinue">
+    Submit
+  </button>
+  <button ng-click="c.affordabilityPage = false; c.listPage = true;" class="back-button" id="SecondBack">
+    Back
+  </button>
+</div>]]></template>
+    </sp_widget>
+</record_update>

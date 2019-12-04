@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Skills" section_id="b745849c1b5804507e9211fc2d4bcbfa" sys_domain="global" table="x_snc_barclay_remo_remortgage_applications" version="3" view="case">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>12M.sn_customerservice_case.task_m2m_skill.task</element>
+            <position>0</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-09-30 16:15:50</sys_created_on>
+            <sys_id>3b45849c1b5804507e9211fc2d4bcbfb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Skills" display_value="Skills" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="8c18d1dedba7330019fe52f8f49619be">b745849c1b5804507e9211fc2d4bcbfa</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-09-30 16:15:50</sys_updated_on>
+            <sys_user/>
+            <type>list</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Skills</caption>
+            <header>false</header>
+            <name>x_snc_barclay_remo_remortgage_applications</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-09-30 16:15:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b745849c1b5804507e9211fc2d4bcbfa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Skills</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+            <sys_update_name>sys_ui_section_b745849c1b5804507e9211fc2d4bcbfa</sys_update_name>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-09-30 16:15:50</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Case" name="case">8c18d1dedba7330019fe52f8f49619be</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

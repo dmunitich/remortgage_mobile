@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Financial Requirements" section_id="33bf4da8dbd4c45019fe52f8f4961904" sys_domain="global" table="x_snc_barclay_remo_remortgage_applications" version="3" view="Barclay">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total_savings</element>
+            <position>0</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:12:19</sys_created_on>
+            <sys_id>8ddbd1ecdb18c45019fe52f8f496199e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:12:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total_investments</element>
+            <position>1</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:12:19</sys_created_on>
+            <sys_id>09dbd1ecdb18c45019fe52f8f496199f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:12:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total_required</element>
+            <position>2</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:12:19</sys_created_on>
+            <sys_id>8ddbd1ecdb18c45019fe52f8f496199f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:12:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>deposit_amount</element>
+            <position>3</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:12:19</sys_created_on>
+            <sys_id>15dbd1ecdb18c45019fe52f8f49619a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:12:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>source_deposit</element>
+            <position>4</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:12:19</sys_created_on>
+            <sys_id>99dbd1ecdb18c45019fe52f8f49619a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:12:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>year_length</element>
+            <position>5</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:12:19</sys_created_on>
+            <sys_id>11dbd1ecdb18c45019fe52f8f49619a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:12:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>month_length</element>
+            <position>6</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:12:19</sys_created_on>
+            <sys_id>95dbd1ecdb18c45019fe52f8f49619a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:12:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total_applicants</element>
+            <position>7</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:12:19</sys_created_on>
+            <sys_id>1ddbd1ecdb18c45019fe52f8f49619a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:12:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>child_dependents</element>
+            <position>8</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:12:19</sys_created_on>
+            <sys_id>91dbd1ecdb18c45019fe52f8f49619a2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:12:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>adult_dependents</element>
+            <position>9</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:12:19</sys_created_on>
+            <sys_id>19dbd1ecdb18c45019fe52f8f49619a2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:12:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>10</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:12:19</sys_created_on>
+            <sys_id>9ddbd1ecdb18c45019fe52f8f49619a2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:12:19</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>property_value</element>
+            <position>11</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:12:19</sys_created_on>
+            <sys_id>15dbd1ecdb18c45019fe52f8f49619a3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:12:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>purchase_price</element>
+            <position>12</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:12:19</sys_created_on>
+            <sys_id>99dbd1ecdb18c45019fe52f8f49619a3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:12:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>existing_product</element>
+            <position>13</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:12:19</sys_created_on>
+            <sys_id>11dbd1ecdb18c45019fe52f8f49619a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:12:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>product_code</element>
+            <position>14</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:12:19</sys_created_on>
+            <sys_id>95dbd1ecdb18c45019fe52f8f49619a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:12:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>customer_added_fee</element>
+            <position>15</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:12:19</sys_created_on>
+            <sys_id>1ddbd1ecdb18c45019fe52f8f49619a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:12:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>loan_purpose</element>
+            <position>16</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:12:19</sys_created_on>
+            <sys_id>91dbd1ecdb18c45019fe52f8f49619a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:12:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>repayment_method</element>
+            <position>17</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:12:19</sys_created_on>
+            <sys_id>19dbd1ecdb18c45019fe52f8f49619a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:12:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>payment_method</element>
+            <position>18</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:12:19</sys_created_on>
+            <sys_id>9ddbd1ecdb18c45019fe52f8f49619a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:12:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pay_date</element>
+            <position>19</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:12:19</sys_created_on>
+            <sys_id>15dbd1ecdb18c45019fe52f8f49619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:12:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>repay_strategy</element>
+            <position>20</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:12:19</sys_created_on>
+            <sys_id>99dbd1ecdb18c45019fe52f8f49619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial Requirements" display_value="Financial Requirements" name="x_snc_barclay_remo_remortgage_applications" sys_domain="global" view="f5f498181bd804507e9211fc2d4bcbf7">33bf4da8dbd4c45019fe52f8f4961904</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:12:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Financial Requirements</caption>
+            <header>false</header>
+            <name>x_snc_barclay_remo_remortgage_applications</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 16:19:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>33bf4da8dbd4c45019fe52f8f4961904</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Financial Requirements</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+            <sys_update_name>sys_ui_section_33bf4da8dbd4c45019fe52f8f4961904</sys_update_name>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 16:19:31</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Barclay" name="Barclay">f5f498181bd804507e9211fc2d4bcbf7</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_item">
+    <sys_sg_master_item action="DELETE">
+        <condition_order>-1</condition_order>
+        <datasource_table>x_snc_remortgage_a_barclays_remortgage</datasource_table>
+        <datasource_table_condition/>
+        <embedded_screen display_value="Incomplete Remortgages">abd36784dbff734019fe52f8f49619ac</embedded_screen>
+        <item_view/>
+        <name>Abandoned Remortgages Master Item</name>
+        <sys_class_name>sys_sg_master_item</sys_class_name>
+        <sys_created_by>brian.nguyen</sys_created_by>
+        <sys_created_on>2019-09-05 17:18:21</sys_created_on>
+        <sys_id>33d36784dbff734019fe52f8f49619db</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Abandoned Remortgages Master Item</sys_name>
+        <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+        <sys_update_name>sys_sg_master_item_33d36784dbff734019fe52f8f49619db</sys_update_name>
+        <sys_updated_by>brian.nguyen</sys_updated_by>
+        <sys_updated_on>2019-09-05 17:20:13</sys_updated_on>
+    </sys_sg_master_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</application>
+        <file_path/>
+        <instance_id>080cc80cdb2ffb400ae3ac44d4961906</instance_id>
+        <instance_name>csmbarclaydemo</instance_name>
+        <name>sys_sg_master_item_33d36784dbff734019fe52f8f49619db</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_item"><sys_sg_master_item action="INSERT_OR_UPDATE"><condition_order>-1</condition_order><datasource_table>x_snc_remortgage_a_barclays_remortgage</datasource_table><datasource_table_condition/><embedded_screen display_value="Incomplete Remortgages">abd36784dbff734019fe52f8f49619ac</embedded_screen><item_view/><name>Abandoned Remortgages Master Item</name><sys_class_name>sys_sg_master_item</sys_class_name><sys_created_by>brian.nguyen</sys_created_by><sys_created_on>2019-09-05 17:18:21</sys_created_on><sys_id>33d36784dbff734019fe52f8f49619db</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Abandoned Remortgages Master Item</sys_name><sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package><sys_policy/><sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope><sys_update_name>sys_sg_master_item_33d36784dbff734019fe52f8f49619db</sys_update_name><sys_updated_by>brian.nguyen</sys_updated_by><sys_updated_on>2019-09-05 17:20:13</sys_updated_on></sys_sg_master_item></record_update>]]></payload>
+        <payload_hash>245699636</payload_hash>
+        <record_name>Abandoned Remortgages Master Item</record_name>
+        <reverted_from/>
+        <source>99386abbdbafff0019fe52f8f4961976</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>brian.nguyen</sys_created_by>
+        <sys_created_on>2019-09-30 15:33:29</sys_created_on>
+        <sys_id>239bfbc81b1804507e9211fc2d4bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16d82ce1e8a0000001</sys_recorded_at>
+        <sys_updated_by>brian.nguyen</sys_updated_by>
+        <sys_updated_on>2019-09-30 15:33:29</sys_updated_on>
+        <type>Master Item</type>
+        <update_guid>6f9bfbc8611804506ff4d0ee719d59ad</update_guid>
+        <update_guid_history>6f9bfbc8611804506ff4d0ee719d59ad:0,9344a3c4c3ff7340734ce4ffe00e4ff8:35815441,73d367848bff73405d0c6f6205e61add:-1123558343</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>brian.nguyen</sys_created_by>
+        <sys_created_on>2019-09-30 15:33:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_sg_master_item">sys_sg_master_item</sys_db_object>
+        <sys_id>0521b0496057485ea3e572dcaaa645c1</sys_id>
+        <sys_metadata>33d36784dbff734019fe52f8f49619db</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Abandoned Remortgages Master Item</sys_name>
+        <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+        <sys_scope_delete display_value="">0363a5c818c24d0080425a8083a10000</sys_scope_delete>
+        <sys_update_name>sys_sg_master_item_33d36784dbff734019fe52f8f49619db</sys_update_name>
+        <sys_update_version display_value="sys_sg_master_item_33d36784dbff734019fe52f8f49619db">239bfbc81b1804507e9211fc2d4bcbae</sys_update_version>
+        <sys_updated_by>brian.nguyen</sys_updated_by>
+        <sys_updated_on>2019-09-30 15:33:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

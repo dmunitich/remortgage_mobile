@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>brian.nguyen</sys_created_by>
+        <sys_created_on>2019-09-30 15:29:40</sys_created_on>
+        <sys_id>23bab7481b1804507e9211fc2d4bcb40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_barclay_remo_remortgage_application.x_snc_barclay_remo.remortgage_application_user</sys_name>
+        <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+        <sys_security_acl display_value="x_snc_barclay_remo_remortgage_application">2bbab7481b1804507e9211fc2d4bcb3b</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_23bab7481b1804507e9211fc2d4bcb40</sys_update_name>
+        <sys_updated_by>brian.nguyen</sys_updated_by>
+        <sys_updated_on>2019-09-30 15:29:40</sys_updated_on>
+        <sys_user_role display_value="x_snc_barclay_remo.remortgage_application_user" name="x_snc_barclay_remo.remortgage_application_user">4fba77481b1804507e9211fc2d4bcba1</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</application>
+        <file_path/>
+        <instance_id>080cc80cdb2ffb400ae3ac44d4961906</instance_id>
+        <instance_name>csmbarclaydemo</instance_name>
+        <name>sys_security_acl_role_23bab7481b1804507e9211fc2d4bcb40</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>brian.nguyen</sys_created_by><sys_created_on>2019-09-30 15:29:40</sys_created_on><sys_id>23bab7481b1804507e9211fc2d4bcb40</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_barclay_remo_remortgage_application.x_snc_barclay_remo.remortgage_application_user</sys_name><sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package><sys_policy/><sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope><sys_security_acl display_value="x_snc_barclay_remo_remortgage_application">2bbab7481b1804507e9211fc2d4bcb3b</sys_security_acl><sys_update_name>sys_security_acl_role_23bab7481b1804507e9211fc2d4bcb40</sys_update_name><sys_updated_by>brian.nguyen</sys_updated_by><sys_updated_on>2019-09-30 15:29:40</sys_updated_on><sys_user_role display_value="x_snc_barclay_remo.remortgage_application_user" name="x_snc_barclay_remo.remortgage_application_user">4fba77481b1804507e9211fc2d4bcba1</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>404935660</payload_hash>
+        <record_name>x_snc_barclay_remo_remortgage_application.x_snc_barclay_remo.remortgage_application_user</record_name>
+        <reverted_from/>
+        <source>407e62f51bb088507e9211fc2d4bcba7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>brian.nguyen</sys_created_by>
+        <sys_created_on>2019-09-30 15:29:40</sys_created_on>
+        <sys_id>23bab7481b1804507e9211fc2d4bcb44</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_recorded_at>16d82caa2130000001</sys_recorded_at>
+        <sys_updated_by>brian.nguyen</sys_updated_by>
+        <sys_updated_on>2019-10-30 16:57:07</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>2bbab748fa1804509b32ef3cc101cd43</update_guid>
+        <update_guid_history>2bbab748fa1804509b32ef3cc101cd43:404935660</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_snc_barclay_remo_remortgage_application.x_snc_barclay_remo.remortgage_applicat">7ffbbb0c1b1804507e9211fc2d4bcb84</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>brian.nguyen</sys_created_by>
+        <sys_created_on>2019-09-30 15:35:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>20653955893c4eb5aec13cb3add7b549</sys_id>
+        <sys_metadata>23bab7481b1804507e9211fc2d4bcb40</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_barclay_remo_remortgage_application.x_snc_barclay_remo.remortgage_application_user</sys_name>
+        <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+        <sys_parent display_value="">2bbab7481b1804507e9211fc2d4bcb3b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+        <sys_scope_delete display_value="">0363a5c818c24d0080425a8083a10000</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_23bab7481b1804507e9211fc2d4bcb40</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_23bab7481b1804507e9211fc2d4bcb40">23bab7481b1804507e9211fc2d4bcb44</sys_update_version>
+        <sys_updated_by>brian.nguyen</sys_updated_by>
+        <sys_updated_on>2019-09-30 15:35:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

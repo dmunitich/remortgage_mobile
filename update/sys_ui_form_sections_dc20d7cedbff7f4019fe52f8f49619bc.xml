@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="dc20d7cedbff7f4019fe52f8f49619bc" sys_domain="global" table="x_snc_remortgage_barclaysonlineremortgage" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-09-11 20:59:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1c20dbcedbff7f4019fe52f8f4961983</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_remortgage_barclaysonlineremortgage" name="x_snc_remortgage_barclaysonlineremortgage" sys_domain="global" view="734f03861be333007e9211fc2d4bcbf0">dc20d7cedbff7f4019fe52f8f49619bc</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_remortgage_barclaysonlineremortgage" sys_domain="global" view="734f03861be333007e9211fc2d4bcbf0">1020dbcedbff7f4019fe52f8f496197d</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-09-11 20:59:56</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-09-11 20:59:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5820dbcedbff7f4019fe52f8f4961976</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_remortgage_barclaysonlineremortgage" name="x_snc_remortgage_barclaysonlineremortgage" sys_domain="global" view="734f03861be333007e9211fc2d4bcbf0">dc20d7cedbff7f4019fe52f8f49619bc</sys_ui_form>
+            <sys_ui_section caption="Customer Details" display_value="Customer Details" name="x_snc_remortgage_barclaysonlineremortgage" sys_domain="global" view="734f03861be333007e9211fc2d4bcbf0">9420d7cedbff7f4019fe52f8f49619bf</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-09-11 20:59:56</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-09-11 20:59:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5020dbcedbff7f4019fe52f8f4961998</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_remortgage_barclaysonlineremortgage" name="x_snc_remortgage_barclaysonlineremortgage" sys_domain="global" view="734f03861be333007e9211fc2d4bcbf0">dc20d7cedbff7f4019fe52f8f49619bc</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_snc_remortgage_barclaysonlineremortgage" sys_domain="global" view="734f03861be333007e9211fc2d4bcbf0">1020dbcedbff7f4019fe52f8f4961992</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-09-11 20:59:57</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-09-11 20:59:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1820dbcedbff7f4019fe52f8f4961991</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_remortgage_barclaysonlineremortgage" name="x_snc_remortgage_barclaysonlineremortgage" sys_domain="global" view="734f03861be333007e9211fc2d4bcbf0">dc20d7cedbff7f4019fe52f8f49619bc</sys_ui_form>
+            <sys_ui_section caption="Closure Information" display_value="Closure Information" name="x_snc_remortgage_barclaysonlineremortgage" sys_domain="global" view="734f03861be333007e9211fc2d4bcbf0">9020dbcedbff7f4019fe52f8f496198b</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-09-11 20:59:57</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-09-11 20:59:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1820dbcedbff7f4019fe52f8f496197c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_remortgage_barclaysonlineremortgage" name="x_snc_remortgage_barclaysonlineremortgage" sys_domain="global" view="734f03861be333007e9211fc2d4bcbf0">dc20d7cedbff7f4019fe52f8f49619bc</sys_ui_form>
+            <sys_ui_section caption="Major Case Information" display_value="Major Case Information" name="x_snc_remortgage_barclaysonlineremortgage" sys_domain="global" view="734f03861be333007e9211fc2d4bcbf0">d420dbcedbff7f4019fe52f8f4961977</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-09-11 20:59:56</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-09-11 20:59:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9820dbcedbff7f4019fe52f8f496198a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_remortgage_barclaysonlineremortgage" name="x_snc_remortgage_barclaysonlineremortgage" sys_domain="global" view="734f03861be333007e9211fc2d4bcbf0">dc20d7cedbff7f4019fe52f8f49619bc</sys_ui_form>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_snc_remortgage_barclaysonlineremortgage" sys_domain="global" view="734f03861be333007e9211fc2d4bcbf0">1420dbcedbff7f4019fe52f8f4961984</sys_ui_section>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-09-11 20:59:57</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_remortgage_barclaysonlineremortgage</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-09-11 20:59:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dc20d7cedbff7f4019fe52f8f49619bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_remortgage_barclaysonlineremortgage</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+            <sys_update_name>sys_ui_form_sections_dc20d7cedbff7f4019fe52f8f49619bc</sys_update_name>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-09-11 20:59:56</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace" name="workspace">734f03861be333007e9211fc2d4bcbf0</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

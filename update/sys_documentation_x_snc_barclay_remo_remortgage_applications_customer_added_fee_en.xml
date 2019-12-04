@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="customer_added_fee" label="Customer added fee to loan" language="en" table="x_snc_barclay_remo_remortgage_applications">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>customer_added_fee</element>
+            <help/>
+            <hint/>
+            <label>Customer added fee to loan</label>
+            <language>en</language>
+            <name>x_snc_barclay_remo_remortgage_applications</name>
+            <plural>Customer added fee to loans</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-10-01 17:11:55</sys_created_on>
+            <sys_id>5fbbddacdb18c45019fe52f8f49619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Customer added fee to loan</sys_name>
+            <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_barclay_remo_remortgage_applications_customer_added_fee_en</sys_update_name>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-10-01 17:11:55</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

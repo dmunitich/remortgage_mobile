@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_browser_screen">
+    <sys_sg_browser_screen action="INSERT_OR_UPDATE">
+        <available_offline>false</available_offline>
+        <description/>
+        <dynamic_prefetch_count/>
+        <external_browser>true</external_browser>
+        <fetch_type>not_required</fetch_type>
+        <hide_filters>false</hide_filters>
+        <icon display_value="Remortgage Application Icon">14e3dbcadb33bf4019fe52f8f49619a0</icon>
+        <name>Remortgage Application</name>
+        <relative_url>true</relative_url>
+        <roles_override/>
+        <sys_class_name>sys_sg_browser_screen</sys_class_name>
+        <sys_created_by>brian.nguyen</sys_created_by>
+        <sys_created_on>2019-09-11 21:16:35</sys_created_on>
+        <sys_id>60e39fcadb33bf4019fe52f8f49619a8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Remortgage Application</sys_name>
+        <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+        <sys_update_name>sys_sg_browser_screen_60e39fcadb33bf4019fe52f8f49619a8</sys_update_name>
+        <sys_updated_by>brian.nguyen</sys_updated_by>
+        <sys_updated_on>2019-09-16 20:53:14</sys_updated_on>
+        <url>/mbc?id=hsbc_landing_page</url>
+    </sys_sg_browser_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=60e39fcadb33bf4019fe52f8f49619a8"/>
+</record_update>

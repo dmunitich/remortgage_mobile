@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map">
+    <sys_sg_action_param_map action="INSERT_OR_UPDATE">
+        <button display_value="New Remortgage">d47cdb3bdb27334019fe52f8f49619c9</button>
+        <item_parameter display_value="Outgoings">da80530c1bfb33407e9211fc2d4bcb95</item_parameter>
+        <sys_class_name>sys_sg_action_param_map</sys_class_name>
+        <sys_created_by>brian.nguyen</sys_created_by>
+        <sys_created_on>2019-09-05 16:53:19</sys_created_on>
+        <sys_id>012e1bc01b7f33407e9211fc2d4bcbf2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>da80530c1bfb33407e9211fc2d4bcb95</sys_name>
+        <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+        <sys_update_name>sys_sg_action_param_map_012e1bc01b7f33407e9211fc2d4bcbf2</sys_update_name>
+        <sys_updated_by>brian.nguyen</sys_updated_by>
+        <sys_updated_on>2019-09-05 16:53:19</sys_updated_on>
+        <ui_parameter display_value="Outgoings">32999fc81b3f33407e9211fc2d4bcb8a</ui_parameter>
+    </sys_sg_action_param_map>
+</record_update>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="sn_customerservice_case" label="Remortgage Applications" max_length="40" name="x_snc_barclay_remo_remortgage_applications" sizeclass="6" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Adult Dependants" max_length="40" name="adult_dependents" type="string"/>
+        <element label="Amount of Non-recurring Items" max_length="100" name="amount_of_non_recurring_items" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Child Dependants" max_length="40" name="child_dependents" type="string"/>
+        <element label="Country" max_length="100" name="country" type="string"/>
+        <element label="Customer added fee to loan" max_length="40" name="customer_added_fee" type="boolean"/>
+        <element attributes="omit_sys_original=true" label="Deposit Amount" max_length="20" name="deposit_amount" type="currency"/>
+        <element label="Employer Address" max_length="100" name="employer_address" type="string"/>
+        <element label="Employer Name" max_length="100" name="employer_name" type="string"/>
+        <element label="Employer Status" max_length="40" name="employer_status" type="string"/>
+        <element label="Employment Start Date" max_length="40" name="employment_start_date" type="glide_date"/>
+        <element choice="1" label="Employment Type" max_length="40" name="employment_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Full Time" sequence="0" value="Full"/>
+                <element inactive_on_update="false" label="Part Time" sequence="1" value="Part"/>
+                <element inactive_on_update="false" label="Apprentice/Trainee" sequence="2" value="Apprentice"/>
+                <element inactive_on_update="false" label="Employee Agency Staff/Labour Hir" sequence="3" value="Labour Hire"/>
+                <element inactive_on_update="false" label="Contractor/Sub-Contractor" sequence="4" value="Contractor"/>
+            </choice>
+        </element>
+        <element label="Porting existing NatWest Product" max_length="40" name="existing_product" type="boolean"/>
+        <element label="Income Amount" max_length="38" name="income_amount" type="currency"/>
+        <element label="Income Frequency" max_length="40" name="income_frequency" type="string"/>
+        <element label="Income Type" max_length="40" name="income_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Loan Purpose" max_length="40" name="loan_purpose" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="0" label="Months" max_length="40" name="month_length" type="string"/>
+        <element default="0" label="Net Income" max_length="38" name="net_income" type="currency"/>
+        <element label="Non-recurring Items" max_length="40" name="non_recurring_items" type="boolean"/>
+        <element label="Non-recurring Items Details" max_length="4000" name="non_recurring_items_details" type="string"/>
+        <element label="Occupation" max_length="40" name="occupation" type="string"/>
+        <element label="Other Commitments" max_length="40" name="other_commitments" type="boolean"/>
+        <element label="Other Loans" max_length="40" name="other_loans" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Payment Method" max_length="40" name="payment_method" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Payment Due Date" max_length="40" name="pay_date" type="glide_date"/>
+        <element label="Personal Changes" max_length="40" name="personal_changes" type="boolean"/>
+        <element label="Postcode" max_length="10" name="postcode" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Product Code" max_length="40" name="product_code" type="string"/>
+        <element label="Property Related Expenses" max_length="40" name="property_related_expenses" type="boolean"/>
+        <element attributes="omit_sys_original=true" label="Property Value" max_length="20" name="property_value" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Purchase Price" max_length="20" name="purchase_price" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Repayment Method" max_length="40" name="repayment_method" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="I/O Repay Strategy" max_length="40" name="repay_strategy" type="string"/>
+        <element label="Re-valuation Details" max_length="4000" name="re_valuation_details" type="string"/>
+        <element label="Re-valuation of Assets Last 2 years" max_length="40" name="re_valuation_of_assets_last_2_years" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Source of Deposit" max_length="40" name="source_deposit" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Total Number of Applicants(plus dependants)" max_length="40" name="total_applicants" type="string"/>
+        <element attributes="omit_sys_original=true" label="Total Amount of Investments" max_length="20" name="total_investments" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Total Amount Required" max_length="20" name="total_required" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Total Amount of Savings" max_length="20" name="total_savings" type="currency"/>
+        <element label="New Integer" max_length="40" name="u_integer_14" type="integer"/>
+        <element label="Work Telephone Number" max_length="40" name="work_telephone_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Years" max_length="40" name="year_length" type="string"/>
+    </element>
+</database>

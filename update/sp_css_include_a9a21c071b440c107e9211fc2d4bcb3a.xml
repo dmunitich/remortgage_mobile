@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include">
+    <sp_css_include action="INSERT_OR_UPDATE">
+        <name>Habito CSS</name>
+        <source>local</source>
+        <sp_css display_value="Habito">33b10c8ddb158c5019fe52f8f49619a6</sp_css>
+        <sys_class_name>sp_css_include</sys_class_name>
+        <sys_created_by>brian.nguyen</sys_created_by>
+        <sys_created_on>2019-09-26 20:01:51</sys_created_on>
+        <sys_id>a9a21c071b440c107e9211fc2d4bcb3a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Habito CSS</sys_name>
+        <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+        <sys_update_name>sp_css_include_a9a21c071b440c107e9211fc2d4bcb3a</sys_update_name>
+        <sys_updated_by>brian.nguyen</sys_updated_by>
+        <sys_updated_on>2019-11-21 16:58:53</sys_updated_on>
+        <url>https://www.habito.com/ff/84da328a565b129a5d48.css</url>
+    </sp_css_include>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="employer_status" label="Employer Status" language="en" table="x_snc_barclay_remo_remortgage_applications">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>employer_status</element>
+            <help/>
+            <hint/>
+            <label>Employer Status</label>
+            <language>en</language>
+            <name>x_snc_barclay_remo_remortgage_applications</name>
+            <plural>Employer Status</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>brian.nguyen</sys_created_by>
+            <sys_created_on>2019-09-30 15:55:42</sys_created_on>
+            <sys_id>f8b0c8941b5804507e9211fc2d4bcb64</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Employer Status</sys_name>
+            <sys_package display_value="Barclay Remortgage App" source="x_snc_barclay_remo">805c17f7db27334019fe52f8f49619e4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Barclay Remortgage App">805c17f7db27334019fe52f8f49619e4</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_barclay_remo_remortgage_applications_employer_status_en</sys_update_name>
+            <sys_updated_by>brian.nguyen</sys_updated_by>
+            <sys_updated_on>2019-09-30 15:55:42</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
